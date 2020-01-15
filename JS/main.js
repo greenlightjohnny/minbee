@@ -128,9 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
  const slideUp = document.querySelectorAll('.slideUp')
 
 
-  console.log(slideItems)
+
   function slideIn() {
-    console.log('hi')
+    
     slideItems.forEach(i => {
 
       if (i.getBoundingClientRect().top + i.scrollHeight / 1.2 + document.documentElement.scrollTop < window.scrollY + window.innerHeight) {
