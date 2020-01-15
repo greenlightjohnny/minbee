@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Tangerine&display=swap");
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -6,6 +7,8 @@
 }
 
 html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -158,8 +161,7 @@ header .fading {
 
 @media (max-width: 599px) {
   header {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("./IMG/art50-mobile.jpg");
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./IMG/art50-mobile.jpg");
+    background: url("../IMG/art50-mobile.jpg");
   }
 }
 
@@ -179,7 +181,8 @@ header h1 {
   position: relative;
   color: #fff;
   top: 30%;
-  font-family: "Arial Black";
+  font-family: "tangerine";
+  z-index: 2;
   letter-spacing: 0.2rem;
   font-weight: bold;
   font-size: 3.5rem;
@@ -214,7 +217,7 @@ header h1 {
 }
 
 .backgroundOpacity {
-  background: rgba(0, 0, 0, 0.9);
+  background: 1;
 }
 
 main {
